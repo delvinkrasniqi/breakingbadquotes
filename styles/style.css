@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap');
+
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    animation: slide 25s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/image1.jpg");
+    background-position: center;
+}
+#logo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'heart_breaking_badregular';
+    color: white;
+}
+
+#content{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 90%;
+}
+#content h2{
+    font-size: 3rem;
+}
+#content p{
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+#creds{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#creds a{
+    color: white;
+    text-decoration: underline;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url("../images/image1.jpg");
+    }
+    30%{
+        background-image: url("../images/image2.png");
+    }
+    50%{
+        background-image: url("../images/image3.jpg");
+    }
+    70%{
+        background-image: url("../images/image4.jpg");
+    }
+    90%{
+        background-image: url("../images/image5.jpg");
+    }
+    
+}
+
+@media(max-width:992px){
+    #content h2{
+        font-size: 2rem;
+    }
+    #content p{
+        font-size: 1rem;
+    }
+    #logo{
+        left: 20px;
+    }
+}
